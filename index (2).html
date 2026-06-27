@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="calculadora">
+    <input type="text" id="pantalla" disabled>
+
+    <div class="botones">
+        <!-- Números -->
+        <button onclick="agregar('7')">7</button>
+        <button onclick="agregar('8')">8</button>
+        <button onclick="agregar('9')">9</button>
+        <button class="operador" onclick="operar('/')">÷</button>
+
+        <button onclick="agregar('4')">4</button>
+        <button onclick="agregar('5')">5</button>
+        <button onclick="agregar('6')">6</button>
+        <button class="operador" onclick="operar('*')">×</button>
+
+        <button onclick="agregar('1')">1</button>
+        <button onclick="agregar('2')">2</button>
+        <button onclick="agregar('3')">3</button>
+        <button class="operador" onclick="operar('-')">−</button>
+
+        <button onclick="agregar('0')">0</button>
+        <button onclick="agregar('.')">.</button>
+        <button class="igual" onclick="calcular()">=</button>
+        <button class="operador" onclick="operar('+')">+</button>
+
+        <!-- Funciones -->
+        <button class="function" onclick="raiz()">√</button>
+        <button class="function" onclick="potencia()">x²</button>
+        <button class="function" onclick="seno()">sin</button>
+        <button class="function" onclick="coseno()">cos</button>
+
+        <button class="function" onclick="tangente()">tan</button>
+        <button class="function" onclick="logaritmo()">log</button>
+        <button class="clear" onclick="limpiar()">C</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
